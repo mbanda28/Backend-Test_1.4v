@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar sesión</title>
+<link rel="stylesheet" href="./font.css">
+<style>
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+    background: linear-gradient(to top, #9a4b6e, #ffa19f);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-container {
+    background-color: #fffbf0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .login-container h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .login-input {
+    display: block;
+    width: 220px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #eddbee;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  .login-button {
+    background-color: #08b2ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .login-button:hover {
+    background-color: #8d93e8;
+  }
+</style>
+</head>
+<body>
+<div class="login-container">
+  <h1>Iniciar sesión</h1>
+  <form>
+    <input class="login-input" type="text" placeholder="Usuario" required>
+    <input class="login-input" type="password" placeholder="Contraseña" required>
+    <button class="login-button" type="button">Iniciar sesión</button>
+  </form>
+</div>
+</body>
+</html>

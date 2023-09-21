@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercado de Frutas</title>
+<style>
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  img {
+    width: 100%;
+  }
+  .header {
+    background-color: #ffa726;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container {
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .fruits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .fruit-card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+  }
+
+  .fruit-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto 10px;
+  }
+
+  .fruit-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .fruit-description {
+    font-size: 1rem;
+    color: #777;
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Bienvenido al Mercado de Frutas</h1>
+  <p>Encuentra las frutas más frescas y deliciosas aquí.</p>
+</div>
+<div class="container">
+  <div class="fruits">
+    <div class="fruit-card">
+      <img class="fruit-image" src="https://images.pexels.com/photos/7263016/pexels-photo-7263016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Manzana">
+      <h2 class="fruit-title">Manzana</h2>
+      <p class="fruit-description">Una fruta jugosa y refrescante, perfecta para cualquier ocasión.</p>
+    </div>
+    <div class="fruit-card">
+      <img class="fruit-image" src="https://images.pexels.com/photos/5643855/pexels-photo-5643855.jpeg" alt="Naranja">
+      <h2 class="fruit-title">Naranja</h2>
+      <p class="fruit-description">Llena de vitamina C y sabor, ideal para hacer jugos naturales.</p>
+    </div>
+    <div class="fruit-card">
+      <img class="fruit-image" src="https://images.pexels.com/photos/5966630/pexels-photo-5966630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Plátano">
+      <h2 class="fruit-title">Plátano</h2>
+      <p class="fruit-description">Una fruta energética y versátil, perfecta como snack o ingrediente.</p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p>&copy; 2023 Mercado de Frutas. Todos los derechos reservados.</p>
+</div>
+
+<script src="./app-fruits.js"></script>
+</body>
+</html>
