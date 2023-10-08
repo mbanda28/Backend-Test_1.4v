@@ -74,3 +74,12 @@
       .disable {
         display: none;
       }
+
+
+      /* pruebas */
+      .cat {
+        margin: 0 10%;
+      }
+      #Gatitos {
+        width: 400px;
+      }

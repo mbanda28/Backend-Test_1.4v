@@ -5,7 +5,7 @@ const options = {
 
 const cards = document.querySelector('.cards')
 const btn = document.querySelector('.cta-button')
-
+const gat = document.querySelector('.cat')
 
 
 fetch(url)
@@ -66,3 +66,26 @@ fetch('https://pokeapi.co/api/v2/type/3', async (req, res) => {
         res.status(404).json({ error: 'Pokémon no encontrado' });
     }
     });
+
+
+const cat = "https://api.thecatapi.com/v1/images/search?limit=2";
+
+
+
+async function loadRandomMichis(){
+    const res = await fetch(cat);
+    const data = await res.json();
+
+        const img = document.querySelector('img');
+        img.src = data[0].url;
+}
+loadRandomMichis()
+async function favoritiesMichis(){
+    const res = await fetch(cat);
+    const data = await res.json();
+
+        const img = document.querySelector('img');
+        img.src = data[0].url;
+}
+favoritiesMichis()
+
